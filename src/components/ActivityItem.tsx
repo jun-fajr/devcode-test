@@ -1,14 +1,14 @@
-import React from 'react'
 import { clsx } from 'clsx'
+import React from 'react'
 
 import 'react-edit-text/dist/index.css'
 
-import { priorityBadge } from '../helpers/badge'
+import { Badge } from './Badge'
 import { Edit, Trash } from './Icon'
 
-import type { TodoItems } from '../routes/Detail'
-import { API_ENDPOINT } from '../Config'
 import { Todos } from '../App'
+import { API_ENDPOINT } from '../Config'
+import type { TodoItems } from '../routes/Detail'
 
 interface ActivityItem {
   item: TodoItems
@@ -38,11 +38,11 @@ const ActivityItem: React.FunctionComponent<ActivityItem> = ({
   }
 
   const rootBadge = clsx('rounded-full w-3 h-3', {
-    [priorityBadge['very-low']]: item.priority === 'very-low',
-    [priorityBadge.low]: item.priority === 'low',
-    [priorityBadge.normal]: item.priority === 'normal',
-    [priorityBadge.high]: item.priority === 'high',
-    [priorityBadge['very-high']]: item.priority === 'very-high'
+    [Badge['very-low']]: item.priority === 'very-low',
+    [Badge.low]: item.priority === 'low',
+    [Badge.normal]: item.priority === 'normal',
+    [Badge.high]: item.priority === 'high',
+    [Badge['very-high']]: item.priority === 'very-high'
   })
 
   return (

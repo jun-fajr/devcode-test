@@ -1,13 +1,13 @@
 import React from 'react'
-import { AZ, Newest, Oldest, Unfinished, ZA } from '../components/Icon'
 import { Filter } from '../routes/Detail'
+import { AZ, Newest, Oldest, Unfinished, ZA } from './Icon'
 
 type Filters = {
   label: Filter
   icon: React.ReactNode
 }[]
 
-export const activityFilters: Filters = [
+export const ActivityFilters: Filters = [
   {
     label: 'Terbaru',
     icon: <Newest />

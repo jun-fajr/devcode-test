@@ -1,9 +1,9 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
+import { Dialog, Listbox, Transition } from '@headlessui/react'
 import React, { Fragment } from 'react'
-import { Dialog, Transition, Listbox } from '@headlessui/react'
-import { Check, Close } from './Icon'
-import { PriorityOptions } from '../routes/Detail'
 import { Todos } from '../App'
+import { PriorityOptions } from '../routes/Detail'
+import { Check, Close } from './Icon'
 
 type SelectedProps = {
   title?: string

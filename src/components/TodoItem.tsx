@@ -1,8 +1,8 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
 
-import { Trash } from './Icon'
 import type { Todos } from '../App'
+import { Trash } from './Icon'
 
 type Props = {
   todo: Todos | undefined

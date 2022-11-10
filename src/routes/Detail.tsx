@@ -1,17 +1,17 @@
 import React from 'react'
-import { useParams } from 'react-router-dom'
 import 'react-edit-text/dist/index.css'
+import { useParams } from 'react-router-dom'
 
 import { Todos } from '../App'
 import ActivityItem from '../components/ActivityItem'
-import NoResult from '../components/No-result'
-import { API_ENDPOINT } from '../Config'
+import { Badge } from '../components/Badge'
 import DeleteModal from '../components/DeleteModal'
 import Modal from '../components/Modal'
-import Toast from '../components/Toast'
-import Spinner from '../components/Spinner'
 import Navigation from '../components/Navigation'
-import { priorityBadge } from '../helpers/badge'
+import NoResult from '../components/No-result'
+import Spinner from '../components/Spinner'
+import Toast from '../components/Toast'
+import { API_ENDPOINT } from '../Config'
 
 export type PriorityOptions = {
   id: number
@@ -113,11 +113,11 @@ const Detail = () => {
   }, [filter, todos])
 
   const PRIORITY: PriorityOptions[] = [
-    { id: 0, item: 'very-low', label: 'Very Low', color: priorityBadge['very-low'] },
-    { id: 1, item: 'low', label: 'Low', color: priorityBadge.low },
-    { id: 2, item: 'normal', label: 'Normal', color: priorityBadge.normal },
-    { id: 3, item: 'high', label: 'High', color: priorityBadge.high },
-    { id: 4, item: 'very-high', label: 'Very High', color: priorityBadge['very-high'] }
+    { id: 0, item: 'very-low', label: 'Very Low', color: Badge['very-low'] },
+    { id: 1, item: 'low', label: 'Low', color: Badge.low },
+    { id: 2, item: 'normal', label: 'Normal', color: Badge.normal },
+    { id: 3, item: 'high', label: 'High', color: Badge.high },
+    { id: 4, item: 'very-high', label: 'Very High', color: Badge['very-high'] }
   ]
 
   React.useEffect(() => {

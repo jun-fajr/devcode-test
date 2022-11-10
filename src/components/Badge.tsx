@@ -1,4 +1,4 @@
-export const priorityBadge = {
+export const Badge = {
   'very-low': 'bg-[#B01AFF]',
   low: 'bg-[#43C4E3]',
   normal: 'bg-[#00A790]',

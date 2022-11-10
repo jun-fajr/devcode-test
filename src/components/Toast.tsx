@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import React from 'react'
 import { Dialog, Transition } from '@headlessui/react'
+import React from 'react'
 import { Info } from './Icon'
 
 type ModalProps = {

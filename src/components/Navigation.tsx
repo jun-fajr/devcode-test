@@ -2,10 +2,10 @@
 import { Listbox, Transition } from '@headlessui/react'
 import React, { Fragment } from 'react'
 import { Link } from 'react-router-dom'
-import { Filter, TodoItem } from '../routes/Detail'
-import { activityFilters } from '../helpers/activityFilters'
-import { Check, ChevronLeft, Edit, Plus, Sort } from './Icon'
 import { API_ENDPOINT } from '../Config'
+import { Filter, TodoItem } from '../routes/Detail'
+import { ActivityFilters } from './ActivityFilters'
+import { Check, ChevronLeft, Edit, Plus, Sort } from './Icon'
 
 type Props = {
   item: TodoItem
@@ -101,7 +101,7 @@ const Navigation: React.FunctionComponent<Props> = ({
                 leaveTo='opacity-0'
               >
                 <Listbox.Options className='absolute w-[15rem] flex flex-col right-0 mt-1 rounded-md bg-white divide-y text-base shadow-lg ring-black ring-opacity-5 focus:outline-none sm:text-sm z-50'>
-                  {activityFilters.map(item => {
+                  {ActivityFilters.map(item => {
                     return (
                       <Listbox.Option
                         value={item.label}

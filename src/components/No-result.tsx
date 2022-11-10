@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 import React from 'react'
 import activityEmpty from '../assets/activity-empty-state.svg'
 import todoEmpty from '../assets/todo-empty-state.svg'

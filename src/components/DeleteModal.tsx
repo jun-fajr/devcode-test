@@ -1,8 +1,8 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import React from 'react'
 import { Dialog, Transition } from '@headlessui/react'
-import { ExclamationMark } from './Icon'
+import React from 'react'
 import { Todos } from '../App'
+import { ExclamationMark } from './Icon'
 
 type ModalProps = {
   isOpen: boolean
